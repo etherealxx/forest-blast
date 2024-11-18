@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dss6mlpo0ex27"]
+
+[ext_resource type="PackedScene" uid="uid://cpip4ndrq3nm5" path="res://examples/forest-brawl/models/player/cybergirl_old2_test2.glb" id="1_4abcp"]
+[ext_resource type="Texture2D" uid="uid://cmajrri0xfk6b" path="res://examples/forest-brawl/models/player/cybergirl_old2_test2_cybergirl_baked_color.png" id="2_7lpwc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_11nc7"]
+resource_name = "BodyMatNew"
+cull_mode = 2
+albedo_texture = ExtResource("2_7lpwc")
+roughness = 0.5
+
+[node name="Cybergirl_Model" instance=ExtResource("1_4abcp")]
+
+[node name="Gun" parent="cyberassasingirl_rig/Skeleton3D" index="0"]
+transform = Transform3D(0.00747285, -0.995169, -0.0978899, -0.997213, -0.0146822, 0.0731344, -0.0742183, 0.0970707, -0.992506, -0.463369, 0.755963, 0.0204389)
+bone_idx = 363
+
+[node name="BaseBody" parent="cyberassasingirl_rig/Skeleton3D" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_11nc7")

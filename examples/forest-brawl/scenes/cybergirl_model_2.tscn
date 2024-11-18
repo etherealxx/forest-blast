@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd253fh7640an"]
+
+[ext_resource type="PackedScene" uid="uid://boal37mbmexj5" path="res://examples/forest-brawl/models/cybergirl/cyber-assassin-girl_rigify_rigged2_baketest2_animtest1.glb" id="1_ubrmi"]
+
+[node name="Cybergirl_Model2" instance=ExtResource("1_ubrmi")]
+
+[node name="Gun" parent="cyberassasingirl_rig/Skeleton3D" index="0"]
+transform = Transform3D(0.00747259, -0.995168, -0.0978954, -0.997213, -0.0146824, 0.0731341, -0.074218, 0.0970762, -0.992505, -0.463369, 0.755963, 0.0204389)
+bone_idx = 363
